@@ -1,0 +1,3 @@
+THis is the sample for git_hub file... created in mymacbook pro terminal2!!! 
+
+written by jay
