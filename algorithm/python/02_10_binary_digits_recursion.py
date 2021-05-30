@@ -7,7 +7,7 @@ def binary_digits(n):
 	return print(n%2, end='')
 
 # 2번을 해보세요!
-n = int(input('왠만하면 1보다 큰거 쓰자~~'))
+n = int(input('왠만하면 1보다 큰거 쓰자~~ : '))
 
 
 # 출력합니다!
