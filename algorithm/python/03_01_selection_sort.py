@@ -1,28 +1,41 @@
 # 1번을 해보세요!
 def selection_sort(A):
     # 여기에 코드를 작성해보세요!
-    return None
+    
+    for i in range(0, len(A)-1):
+        min_idx = i
+        for j in range(i+1, len(A)):
+            if A[min_idx] > A[j]:
+                min_idx = j
+        if min_idx != i:
+            A[i], A[min_idx] = A[min_idx], A[i]
+            
+    return A
 
+    
 def printStep(arr, val):
     print("  Step %2d = " %val, end='')
     print(arr)
 
 # 2번을 해보세요!
-A = []
+A = [int(x) for x in input().split()]
 
 # 출력합니다!
 print("Original  :", A)
 selection_sort(A)
 print("Selection :", A)
 
-
+if __name__ == '__main__': 
+# 출력합니다!
+  selection_sort(A)
 
 
 # 정렬 문제 | p.100
-# 리스트에 n개의 항목이 들어 있습니다. 이들을 키(key)의 순서에 따라 오름차순(non-decreasing order)으로 재배치해봅시다.
+# 리스트에 n개의 항목이 들어 있습니다. 이들을 키(key)의 순서에 따라 
+# 오름차순(non-decreasing order)으로 재배치해봅시다.
 
-# 설명을 단순화하기 위해 항목 자체가 키값이라고 해봅시다. 여기서는 리스트에 숫자가 들어 있고, 이 리스트를 오름차순으로 정렬한다고 가정합니다.
-
+# 설명을 단순화하기 위해 항목 자체가 키값이라고 해봅시다. 여기서는 리스트에 숫자가 들어 있고, 
+# 이 리스트를 오름차순으로 정렬한다고 가정합니다.
 
 # 이렇게 해보세요!
 # 책 p.100~104를 참고해서 풀어보세요!
