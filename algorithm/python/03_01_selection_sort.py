@@ -1,33 +1,42 @@
 # 1번을 해보세요!
 def selection_sort(A):
     # 여기에 코드를 작성해보세요!
-    
-    for i in range(0, len(A)-1):
+    n = len(A)
+    for i in range(n-1):
         min_idx = i
-        for j in range(i+1, len(A)):
+        for j in range(i+1, n):
             if A[min_idx] > A[j]:
                 min_idx = j
-        if min_idx != i:
-            A[i], A[min_idx] = A[min_idx], A[i]
-            
+        A[i], A[min_idx] = A[min_idx], A[i]     
+        printStep(A, i+1)
+        
+        
+        # if min_idx != i:
+        #     A[i], A[min_idx] = A[min_idx], A[i]
+        
+        
     return A
+
 
     
 def printStep(arr, val):
     print("  Step %2d = " %val, end='')
     print(arr)
 
+
 # 2번을 해보세요!
 A = [int(x) for x in input().split()]
 
-# 출력합니다!
-print("Original  :", A)
-selection_sort(A)
-print("Selection :", A)
+
+#selection_sort(A)
+
 
 if __name__ == '__main__': 
 # 출력합니다!
-  selection_sort(A)
+    print("Original  :", A)
+    selection_sort(A)
+    print("Selection :", A)
+# 출력합니다!
 
 
 # 정렬 문제 | p.100
@@ -54,4 +63,4 @@ if __name__ == '__main__':
 #   Step  2 = [3, 4, 8, 5, 9]
 #   Step  3 = [3, 4, 5, 8, 9]
 #   Step  4 = [3, 4, 5, 8, 9]
-# Selection : [3, 4, 5, 8, 9]
+# Selection : [3, 4, 5, 8, 9] 
