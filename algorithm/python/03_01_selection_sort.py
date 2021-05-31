@@ -9,35 +9,20 @@ def selection_sort(A):
                 min_idx = j
         A[i], A[min_idx] = A[min_idx], A[i]     
         printStep(A, i+1)
-        
-        
-        # if min_idx != i:
-        #     A[i], A[min_idx] = A[min_idx], A[i]
-        
-        
     return A
-
-
     
 def printStep(arr, val):
     print("  Step %2d = " %val, end='')
     print(arr)
 
-
 # 2번을 해보세요!
 A = [int(x) for x in input().split()]
-
-
-#selection_sort(A)
-
 
 if __name__ == '__main__': 
 # 출력합니다!
     print("Original  :", A)
     selection_sort(A)
     print("Selection :", A)
-# 출력합니다!
-
 
 # 정렬 문제 | p.100
 # 리스트에 n개의 항목이 들어 있습니다. 이들을 키(key)의 순서에 따라 
