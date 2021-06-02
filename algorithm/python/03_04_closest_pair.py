@@ -1,17 +1,35 @@
 # 필요한 모듈을 추가해 보세요!
-import sys
-userInput = sys.stdin.readlines()
+import math
+
 
 # 1번을 해보세요!
+
+# def get_x_y(p):
+#   x = []
+#   y = []
+#   for i in range(len(p)):
+#     x.append(p[i][0])
+#     y.append(p[0][i])
+  
+#   x_dist = math.pow()
+#     return x, y
+
 def closest_pair(p):
-    return None
+  get_x_y(p)
+
+
 
 
 # 2번을 해보세요!
-p = [tuple(int(x) for x in input().splitlines())]
-print(p)
-# 출력합니다!
-print("최근점 거리:", closest_pair(p))
+# p = list(tuple(map(int,input().split())) for r in range(int(input('enter num of rows : '))))
+p = list(tuple(map(int, input().split())) for r in range(int(input('입력값: '))))
+
+
+if __name__ == '__main__': 
+
+  #print(p)
+  # 출력합니다!
+  print("최근점 거리:", closest_pair(p))
 
 
 # 최근접 쌍의 거리 문제 | p.112
@@ -25,7 +43,6 @@ print("최근점 거리:", closest_pair(p))
 # 가능한 모든 점의 쌍에 대해 거리를 계산하고 가장 짧은 것을 찾는 함수 closest_pair(p)를 완성해 보세요. 
 # 코드가 너무 길어진다면 추가적인 함수를 정의하여 closest_pair(p) 내에서 호출해도 좋아요.
 # 점의 리스트 p를 입력받아 보세요. p는 [(x1, y1), …, (xn, yn)] 의 형태로 되어 있으며, 입력은 아래 예시와 같이 주어져요.
-
 
 # 입력 예시
 # 6
