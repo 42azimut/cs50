@@ -2,6 +2,7 @@
 def string_matching(T, P):
   #if len(T) >= len(P):
     
+    #return T.find(P[0])   //이걸 이틀 동안 ㅠㅠ 너무해!
     return T.find(P)
 
 # 2번을 해보세요!
