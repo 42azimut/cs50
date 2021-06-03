@@ -1,29 +1,19 @@
 # 필요한 모듈을 추가해 보세요!
-import math
-
 
 # 1번을 해보세요!
-
-# def get_x_y(p):
-#   x = []
-#   y = []
-#   for i in range(len(p)):
-#     x.append(p[i][0])
-#     y.append(p[0][i])
-  
-#   x_dist = math.pow()
-#     return x, y
-
 def closest_pair(p):
-  get_x_y(p)
-
-
+	x_dist = []
+	for i in range(len(p)):
+		x = sqrt((p([i][0]) - p([i+1][0]))**2)
+    return None
 
 
 # 2번을 해보세요!
-# p = list(tuple(map(int,input().split())) for r in range(int(input('enter num of rows : '))))
-p = list(tuple(map(int, input().split())) for r in range(int(input('입력값: '))))
+## 와~~ 이거 찾는데 4시간 넘게걸린듯!! 위에 모둘 잘못 안지워서 계속 에러~~ ㅜㅜ
+p = [list(tuple(map(int, input().split())) for r in range(int(input('점 쌍 개수 : '))))]
 
+
+# 출력합니다!
 
 if __name__ == '__main__': 
 
