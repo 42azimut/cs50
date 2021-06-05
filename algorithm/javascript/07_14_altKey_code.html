@@ -1,0 +1,57 @@
+<!-- 아래 코드를 완성하고 제출 버튼을 눌러보세요! -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const h1 = document.querySelector('h1')
+        const print = (event) => {
+          let output = ''
+          output += `alt: ${event.altKey !== 'undefiend' ? event.altKey : event.keyCode }<br>`// 1번을 해보세요!
+          output += `ctrl: ${event.ctrlKey !== 'undefined' ? event.ctrlKey : event.keyCode}<br>` // 2번을 해보세요!
+          output +=  `shiftKey : ${event.shiftKey !== 'undefined' ? event.shiftKey : event.keyCode}<br>`  // 3번을 해보세요!
+          output += `code: ${typeof(event.code) !== 'undefined' ? event.code : event.keyCode}<br>`
+        h1.innerHTML = output
+        }
+
+        document.addEventListener('keydown', print)
+        document.addEventListener('keyup', print) 
+      })
+    </script>
+  </head>
+  <body>
+    <h1></h1>
+  </body>
+</html>
+
+
+<!-- 
+키보드 이벤트와 관련된 이벤트 속성 | p.333
+키보드 이벤트가 발생할 때는 이벤트 객체로 어떤 키를 눌렀는지와 관련된 속성들이 따라옵니다. 
+여러 속성들이 있지만, 여기서는 다음과 같은 속성만 살펴보겠습니다.
+
+이벤트 속성 이름	설명
+code	입력한 키
+keyCode	입력한 키를 나타내는 숫자
+altkey	Alt키를 눌렀는지
+ctrlKey	Ctrl키를 눌렀는지
+shiftKey	Shift키를 눌렀는지
+
+# code 속성은 입력한 키를 나타내는 문자열이 들어있고 
+# altKey, ctrlKey, shiftKey 속성은 해당 키를 눌렀는지 불 자료형 값이 들어있습니다. 
+# 어떤 의미인지 간단하게 속성들을 출력하는 프로그램을 만들어서 살펴보겠습니다. 
+# 다음 코드는 keydown 이벤트와 keyup 이벤트가 발생할 때 표에서 설명한 속성을 모두 출력하는 프로그램입니다.
+
+이렇게 해보세요!
+책 p.333을(를) 참고해서 풀어보세요!
+
+실행 결과대로 출력이 되도록 alt키가 눌리면 불 값을 반환하는 이벤트 속성을 작성해보세요.
+실행 결과대로 출력이 되도록 ctrl키가 눌리면 불 값을 반환하는 이벤트 속성을 작성해보세요.
+실행 결과대로 출력이 되도록 shift키가 눌리면 불 값을 반환하는 이벤트 속성을 작성해보세요.
+
+실행 결과
+alt: true 
+ctrl: false
+shift: false
+code: keyCode
