@@ -1,0 +1,60 @@
+<!-- 아래 코드를 완성하고 제출 버튼을 눌러보세요! -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+      const rawInput = prompt('태어난 해를 입력해주세요.','')
+      const year = Number(rawInput)
+      const e = year % 12
+
+		let result
+		
+		if (e === 0 ) // 1번을 해보세요!
+		{ result = '원숭이' }
+		
+		else if (e === 1) // 2번을 해보세요!
+		{ result = '닭' }
+		
+		else if (e === 2)// 3번을 해보세요!
+		{ result = '개' }
+		
+		else if (e === 3) // 4번을 해보세요!
+		{ result = '돼지' }
+		
+		else if (e === 4)// 5번을 해보세요!
+		{ result = '쥐' }
+		
+		else if (e === 5)// 6번을 해보세요! 
+		{ result = '소' }
+		
+		else if (e === 6)// 7번을 해보세요! 
+		{ result = '호랑이' }
+		
+		else if (e === 7)// 8번을 해보세요! 
+		{ result = '토끼' }
+		
+		else if (e === 8)// 9번을 해보세요!
+		{ result = '용' }
+		
+		else if (e === 9)// 10번을 해보세요! 
+		{ result = '뱀' }
+		
+		else if (e === 10)// 11번을 해보세요!
+		{ result = '말' }
+		
+		else if  (e === 11)// 12번을 해보세요!
+		{ result = '양' }
+		
+		alert(`${year}년에 태어났다면 ${result} 띠입니다.`)
+    </script>
+  </head>
+  <body></body>
+</html>
+
+
+<!-- 태어난 연도를 입력받아 띠 출력하기 - if else if 조건문 사용해보기 | p.152
+사용자에게 태어난 연도를 입력받아 띠를 출력하는 프로그램을 생각해봅시다. 
+태어난 연도를 12로 나눈 나머지가 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11일 때, 
+띠 동물은 원숭이, 닭, 개, 돼지, 쥐, 소, 호랑이, 토끼, 용, 뱀, 말, 양입니다. -->
