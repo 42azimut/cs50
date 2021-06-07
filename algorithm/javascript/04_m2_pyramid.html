@@ -1,0 +1,38 @@
+<!-- 아래 코드를 완성하고 제출 버튼을 눌러보세요! -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script>
+	//const star_len = '***************************'.length
+	//console.log(star_len)
+	
+      // let 변수를 선언합니다.
+      let output = ''
+	  const star_len = 27
+      // 중첩 반복문
+      // 지시사항을 수행해보세요.
+	  
+	  for (let i = 0; i < star_len; i++) 
+	  {
+	  	for (let j = star_len; j > i; j--) 
+		{
+			output += ' ';			
+		}
+		for (let k = 0; k < 2 * i -1; k++) 
+		{
+			output += '*';	
+		}
+		output += '\n'
+		
+	  }
+
+      // 출력합니다.
+      
+	  console.log(output)
+	  
+    </script>
+  </head>
+  <body></body>
+</html>
+ 
