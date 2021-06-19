@@ -1,5 +1,5 @@
 - [react ReadME](https://github.com/42azimut/cs50/blob/master/algorithm/javascript/react_README.md)
-- [python alogorithm](https://github.com/42azimut/cs50/blob/master/algorithm/javascript/python_algo_README)
+- [python alogorithm](https://github.com/42azimut/cs50/blob/master/algorithm/python/python_algo_README)
 - 
 
 ##  cs50
