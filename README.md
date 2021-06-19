@@ -1,4 +1,4 @@
-- [react ReadME](https://github.com/42azimut/cs50/new/master/algorithm/javascript)
+- [react ReadME](https://github.com/42azimut/cs50/blob/master/algorithm/javascript/react_README.md)
 - [python alogorithm]()
 - 
 
