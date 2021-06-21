@@ -36,8 +36,19 @@
   </script>
 ```
 
-## 10_04
+## 10_04 루트 컴포넌트 출력을 클래스 컴포넌트로 구현하기
+```
+class 컴포넌트 이름 extends React.Component {
+    render() {
+        return <h1>출력할 것</h1>
+    }
+}
+```
+
 
 ## 10_05 컴포넌트 속성 사용하기
 - 클래스 컴포넌트 사용하면 클래스 매소드 내부에서 this.prop 속성을 사용할 수 있습니다. 
-- ` <h1>{this.props.name} 님 안녕하세요!</h1>`
+- `<h1>{this.props.name} 님 안녕하세요!</h1>`
+  - `ReactDOM.render(<App name="구름" />, container)`
+
+
