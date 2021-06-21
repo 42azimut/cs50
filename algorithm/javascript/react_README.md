@@ -10,4 +10,34 @@
 - 이렇게 생성한 컴포넌트를 출력할 때는 ReactDOM.render() 메소드를 사용합니다. 컨테이너는 컴포넌트를 출력할 상자라고 생각하면 됩니다.
   - `ReactDOM.render(컴포넌트, 컨테이너)`
   
- 
+## 10_03 표현식 출력하기
+- JSX 문법 단순하게 태그를 만드는 기능 이외에도 태그 내부에 표현식을 삽입해서 출력하는 기능도 제공합니다. 표현식을 출력할 때는 {…} 기호를 사용합니다. 다만 속성으로 표현식을 출력할 때는 따옴표를 사용하면 안 된다는 것만 주의하면 됩니다.
+
+```
+<태그>{표현식}</태그>
+<태그 속성={표현식} />
+```
+```
+<div id="root"></div>
+  <!-- 리액트를 사용하는 코드 입력 -->
+  <script type="text/babel">
+    // 상수 선언하기
+    const name = '구름'
+
+    // 컴포넌트와 컨테이너 생성하기
+    const component = <div>
+      <h1>{name} 님 안녕하세요!</h1>
+      
+    </div>
+    const container = document.getElementById('root')
+
+    // 출력하기
+    ReactDOM.render(component, container)
+  </script>
+```
+
+## 10_04
+
+## 10_05 컴포넌트 속성 사용하기
+- 클래스 컴포넌트 사용하면 클래스 매소드 내부에서 this.prop 속성을 사용할 수 있습니다. 
+- ` <h1>{this.props.name} 님 안녕하세요!</h1>`
