@@ -45,10 +45,40 @@ class 컴포넌트 이름 extends React.Component {
 }
 ```
 
-
 ## 10_05 컴포넌트 속성 사용하기
 - 클래스 컴포넌트 사용하면 클래스 매소드 내부에서 this.prop 속성을 사용할 수 있습니다. 
 - `<h1>{this.props.name} 님 안녕하세요!</h1>`
   - `ReactDOM.render(<App name="구름" />, container)`
 
+## 10_06 리액트를 활용한 현재 시간 출력 프로그램
+- React.Component 클래스는 여러 속성과 메소드를 제공해 줍니다. 이러한 속성을 변경하고 메소드를 오버라이드하고 우리가 필요한 속성과 메소드를 추가해서 컴포넌트를 만듭니다.
+자주 오버라이드해서 사용하는 메소드는 다음과 같습니다.
+```
+class App extends React.Component {
+    constructor (props) {
+        super(props)
+        // 생성자 코드
+    }
 
+    render () {
+        // 출력할 것
+    }
+
+    componentDidMount () {
+        // 컴포넌트가 화면에 출력될 때 호출
+    }
+
+    componentWillUnmount () {
+        // 컴포넌트가 화면에서 제거될 때 호출
+    }
+}
+```
+
+- 우리가 변경해서 사용하는 속성으로는 state 속성이 있습니다. state 속성에는 출력할 값을 저장합니다. state 속성값을 변경할 때는 반드시 setState() 메소드를 사용합니다. setState() 메소드로 속성의 값을 변경하면 컴포넌트는 render() 메소드를 호출해서 화면에 변경 사항을 출력합니다.
+
+```
+// 상태 선언하기(생성자 위치)
+this.state = { 속성: 값 }
+// 상태 변경하기(이외의 위치)
+this.setState({ 변경할 속성: 값 })
+```
