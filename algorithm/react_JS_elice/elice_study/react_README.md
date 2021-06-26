@@ -1,6 +1,6 @@
 ## Component 사용 유의 할 점
 1. 컴포넌트 이름은 대문자
-2. retunr () 안에는 무조건 `div className="model"` 태그 한개! 이 div 안에 여러 태그 사용!  * <>   .... <>  플래그먼트
+2. return () 안에는 무조건 `div className="model"` 태그 한개! 이 div 안에 여러 태그 사용!  * <>   .... <>  플래그먼트
 3. function App() {} 도 컴포넌트의 일종
 4. <Modal/>  맺음태그 한개로도 가능
 
