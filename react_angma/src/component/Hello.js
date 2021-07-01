@@ -1,26 +1,20 @@
-export default  function Hello() {
-  function showName() {
-    console.log('im iron man');
-  }
-  function showAge(age) {
-    console.log(age);
-  }
+import { useState } from "react";
 
-  function showText(e) {
-    console.log(e.target.value);
+export default  function Hello() {
+  // let name = "Jayden"
+  const [name, setName] = useState("Jayden");
+  
+  function changName() {
+    const newName = name === "Jayden" ? "Mike" : "Jayden"
+    //document.getElementById("name").innerText = name;
+    setName(newName)
   }
 
   return (
     <div>
-      <h1>Hello</h1>
-        <button onClick={showName}>Show Name</button>
-        <button onClick={() => {
-          showAge(22);
-          }}
-        >
-        Show Age
-      </button>
-      <input type="text" onChange={showText} />
+      <h1>state</h1>
+      <h2 id="name">{name} </h2>
+      <button onClick={changName}>Change</button>
     </div>
     )
 }
