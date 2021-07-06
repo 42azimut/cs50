@@ -3,7 +3,7 @@
 - [코딩 앙마 리액트](https://www.youtube.com/watch?v=05uFo_-SGXU&list=PLZKTXPmaJk8J_fHAzPLH8CJ_HO_M33e7-)
 
 ## Lama Dev
-- [MERN Stack by Lama Dev](https://www.youtube.com/watch?v=pFHyZvVxce0&t=134s)
+- [React Node.js Social Media App Tutorial - MERN Stack App Full Course w/ Hooks - Context API](https://www.youtube.com/watch?v=pFHyZvVxce0&t=134s)
 - [React Node.js Full Stack Blog App Tutorial | MERN Stack APP Full Course](https://www.youtube.com/watch?v=LelifxOrzvw)
 
 ##  cs50
