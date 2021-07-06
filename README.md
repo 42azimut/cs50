@@ -1,7 +1,10 @@
 - [react ReadME](https://github.com/42azimut/cs50/blob/master/algorithm/javascript/react_README.md)
 - [python alogorithm](https://github.com/42azimut/cs50/blob/master/algorithm/python/python_algo_README.md)
 - [코딩 앙마 리액트](https://www.youtube.com/watch?v=05uFo_-SGXU&list=PLZKTXPmaJk8J_fHAzPLH8CJ_HO_M33e7-)
-- [다음코스 MERN Stack by Lama Dev](https://www.youtube.com/watch?v=pFHyZvVxce0&t=134s)
+
+## Lama Dev
+- [MERN Stack by Lama Dev](https://www.youtube.com/watch?v=pFHyZvVxce0&t=134s)
+- [React Node.js Full Stack Blog App Tutorial | MERN Stack APP Full Course](https://www.youtube.com/watch?v=LelifxOrzvw)
 
 ##  cs50
 - Harvard University CS50 
