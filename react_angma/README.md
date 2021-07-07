@@ -19,3 +19,7 @@
 ## 09. 더미(dummy) 데이터 구현, map()반복문
 
 ## 10. 라우터 구현
+
+## 11. json-server, REST API
+- `npm i -g json-server`
+
