@@ -23,3 +23,5 @@
 ## 11. json-server, REST API
 - `npm i -g json-server`
 - `json-server --watch ./src/db/data.json --port 3001`
+- rest API : URI주소 와 메서드로 CRUD 요청하는 것!
+- POST, GET, PUT, DELETE
