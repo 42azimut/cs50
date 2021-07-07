@@ -22,4 +22,4 @@
 
 ## 11. json-server, REST API
 - `npm i -g json-server`
-
+- `json-server --watch ./src/db/data.json --port 3001`
