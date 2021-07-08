@@ -25,3 +25,21 @@
 - `json-server --watch ./src/db/data.json --port 3001`
 - rest API : URI주소 와 메서드로 CRUD 요청하는 것!
 - POST, GET, PUT, DELETE
+
+## 12. useEffect, fectch() 로 API 호출
+- 어떤 상태 값이 바꼈을때 동작하는 함수를 작성할수 있다. 
+- 렌더링 후 호출된다.
+
+``
+useEffect(() => {
+  fetch("http://localhost:3000/days")
+    .then(res => {
+      return res.json();
+    })
+    .then(data = > {
+      setDays(data);
+      });
+}, []);
+      
+```
+ 
