@@ -30,7 +30,7 @@
 - 어떤 상태 값이 바꼈을때 동작하는 함수를 작성할수 있다. 
 - 렌더링 후 호출된다.
 
-``
+```
 useEffect(() => {
   fetch("http://localhost:3000/days")
     .then(res => {
